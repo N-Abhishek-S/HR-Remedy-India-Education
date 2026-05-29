@@ -6,6 +6,7 @@ import { CourseCard } from "@/components/cards/CourseCard";
 import { CTAButton } from "@/components/common/CTAButton";
 import { careerTracks, courseAdvantages, courseCategories, courses, trustBadges } from "@/data/platform";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { assetUrl } from "@/lib/asset-url";
 import { routes } from "@/lib/routes";
 
 const levels = ["All Levels", "Beginner", "Intermediate", "Advanced"];
@@ -64,7 +65,7 @@ export default function CoursesPage() {
             </div>
           </GsapReveal>
           <GsapReveal className="relative">
-            <img src="/assets/home/career-counselling-hero.png" alt="" className="mx-auto max-h-[360px] w-full object-contain" />
+            <img src={assetUrl("/assets/home/career-counselling-hero.png")} alt="" className="mx-auto max-h-[360px] w-full object-contain" />
             {trustBadges.slice(0, 3).map((badge, index) => {
               const Icon = badge.icon;
               return (

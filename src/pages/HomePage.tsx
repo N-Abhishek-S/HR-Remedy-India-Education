@@ -9,6 +9,7 @@ import { AnimatedCounter } from "@/components/motion/animated-counter";
 import { CTABanner } from "@/components/site/CTABanner";
 import { courses, mentors, recruiterLogos, recruiters, stats, successStories, whyChooseUs } from "@/data/platform";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { assetUrl } from "@/lib/asset-url";
 import { routes } from "@/lib/routes";
 
 function RecruiterLogo({ name }: Readonly<{ name: string }>) {
@@ -109,10 +110,10 @@ export default function HomePage() {
             loop
             playsInline
             preload="auto"
-            poster="/assets/home/hero-career-roadmap-poster.jpg"
+            poster={assetUrl("/assets/home/hero-career-roadmap-poster.jpg")}
             aria-hidden="true"
           >
-            <source src="/assets/home/hero-career-roadmap.mp4" type="video/mp4" />
+            <source src={assetUrl("/assets/home/hero-career-roadmap.mp4")} type="video/mp4" />
           </video>
           <span className="hero-media-vignette" aria-hidden="true" />
         </div>

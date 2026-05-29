@@ -19,6 +19,7 @@ import { Footer } from "@/components/site/Footer";
 import { Navbar } from "@/components/site/Navbar";
 import { useAuth } from "@/context/AuthContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { assetUrl } from "@/lib/asset-url";
 import { routes } from "@/lib/routes";
 
 function getFormString(form: FormData, key: string) {
@@ -87,7 +88,7 @@ export default function AuthPage({ mode }: Readonly<{ mode: "login" | "signup" }
               </div>
             </div>
             <div className="relative mt-auto hidden min-h-64 lg:block">
-              <img src="/assets/home/hero-career-roadmap-poster.jpg" alt="" className="absolute inset-0 size-full rounded-[24px] object-cover opacity-70" />
+              <img src={assetUrl("/assets/home/hero-career-roadmap-poster.jpg")} alt="" className="absolute inset-0 size-full rounded-[24px] object-cover opacity-70" />
             </div>
           </div>
         </section>

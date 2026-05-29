@@ -4,6 +4,7 @@ import { ChevronDown, Menu, Search, UserRound } from "lucide-react";
 
 import { Drawer } from "@/components/common/Drawer";
 import { Logo } from "@/components/common/Logo";
+import { assetUrl } from "@/lib/asset-url";
 import { routes } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
@@ -78,7 +79,7 @@ export function Navbar() {
       >
         <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
           <Logo
-            src="/assets/logo/hr-remedy-logo-new.png"
+            src={assetUrl("/assets/logo/hr-remedy-logo-new.png")}
             className="w-[190px] shrink-0 overflow-visible sm:w-[220px] lg:w-[250px]"
             imageClassName="h-10 w-auto origin-left scale-[2.2] sm:h-[46px] lg:h-[52px]"
           />
