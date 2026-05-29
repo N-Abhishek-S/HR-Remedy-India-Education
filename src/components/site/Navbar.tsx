@@ -72,8 +72,9 @@ export function Navbar() {
     <>
       <header
         ref={headerRef}
+        data-scrolled={scrolled || undefined}
         className={cn(
-          "sticky top-0 z-40 border-b border-[#E5EAF5]/80 bg-white shadow-[0_8px_28px_rgba(10,42,136,0.07)] backdrop-blur-xl transition-all duration-300",
+          "sticky top-0 z-40 border-b border-transparent bg-transparent transition-all duration-300",
           scrolled && "border-white/35 bg-white/78 shadow-[0_16px_46px_rgba(10,42,136,0.13)] backdrop-blur-[20px]",
         )}
       >

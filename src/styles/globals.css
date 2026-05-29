@@ -263,7 +263,8 @@ h3 {
   display: block;
   min-height: 100vh;
   height: auto;
-  padding-bottom: 120px;
+  margin-top: -72px;
+  padding-bottom: 80px;
   background:
     radial-gradient(circle at 73% 42%, rgba(25, 217, 255, 0.18), transparent 28rem),
     #020817;
@@ -343,26 +344,61 @@ h3 {
     linear-gradient(90deg, rgba(2, 8, 23, 0.16) 0%, transparent 18%, transparent 86%, rgba(2, 8, 23, 0.42) 100%);
 }
 
+/* ─── Navbar-hero blending (homepage only via :has) ─── */
+html:has(.hero-section) header:not([data-scrolled]) .nav-link-premium {
+  color: #061B5C;
+  transition: color 300ms ease;
+}
+
+html:has(.hero-section) header:not([data-scrolled]) .nav-link-premium:hover {
+  color: #1147FF;
+}
+
+html:has(.hero-section) header[data-scrolled] .nav-link-premium {
+  transition: color 300ms ease;
+}
+
+/* Active nav link on dark hero — use primary instead of invisible cyan */
+html:has(.hero-section) header:not([data-scrolled]) .nav-link-premium[aria-current="page"] {
+  color: #1147FF;
+}
+
+/* Icon pill buttons — glass-border treatment on dark hero */
+html:has(.hero-section) header:not([data-scrolled]) [aria-label="Search"],
+html:has(.hero-section) header:not([data-scrolled]) [aria-label="Login"] {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  transition: border-color 300ms ease, box-shadow 300ms ease, transform 300ms ease;
+}
+
+/* CTA button — enhanced glow on dark hero */
+html:has(.hero-section) header:not([data-scrolled]) [aria-label="Open menu"] {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.22);
+  transition: color 300ms ease, border-color 300ms ease;
+}
+
 .hero-content {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 80px);
+  padding-top: 72px;
 }
 
 .hero-copy {
   width: 40%;
   max-width: 500px;
-  padding-top: 1.5rem;
+  padding-top: 0;
 }
 
 .hero-heading {
   margin-top: 1.65rem;
   max-width: 500px;
-  font-size: clamp(3.7rem, 5.75vw, 6rem);
-  line-height: 0.98;
+  font-size: clamp(2.75rem, 4.5vw, 4rem);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
 .hero-description {
-  margin-top: 1.6rem;
+  margin-top: 1.35rem;
 }
 
 .hero-actions {
@@ -377,7 +413,7 @@ h3 {
   }
 
   .hero-heading {
-    font-size: clamp(3.35rem, 5.4vw, 4.5rem);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
   }
 }
 
@@ -404,7 +440,7 @@ h3 {
     order: 1;
     height: auto;
     min-height: 0;
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 1.25rem;
   }
 
@@ -424,8 +460,8 @@ h3 {
   .hero-heading {
     margin-top: 1.25rem;
     max-width: 100%;
-    font-size: clamp(3rem, 9vw, 4.5rem);
-    line-height: 0.98;
+    font-size: clamp(2.25rem, 8vw, 3.25rem);
+    line-height: 1.02;
   }
 
   .hero-description {
