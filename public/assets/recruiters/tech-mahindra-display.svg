@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" role="img" aria-labelledby="title">
+  <title id="title">Tech Mahindra</title>
+  <rect width="300" height="80" fill="none"/>
+  <text x="8" y="38" fill="#E31837" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900">Tech</text>
+  <text x="8" y="66" fill="#1F2937" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Mahindra</text>
+  <path d="M156 18h92l-18 44h-92z" fill="#E31837" opacity=".12"/>
+  <path d="M170 24h38l-9 24h-38zM214 24h32l-9 24h-32z" fill="#E31837"/>
+</svg>
