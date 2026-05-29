@@ -1,6 +1,5 @@
 import { lazy, Suspense, type ReactNode } from "react";
-import { createBrowserRouter, Navigate, Outlet } from "react-router-dom";
-
+import { createHashRouter, Navigate, Outlet } from "react-router-dom";
 import { PageLoader } from "@/components/common/PageLoader";
 import { AnalyticsProvider } from "@/context/AnalyticsProvider";
 import { MarketingLayout } from "@/layouts/MarketingLayout";
@@ -41,7 +40,7 @@ function RootRoute() {
   );
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     element: <RootRoute />,
     children: [
