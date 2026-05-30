@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title id="title">Accenture</title>
+  <rect width="260" height="80" fill="none"/>
+  <path d="M126 14h34l-24 16h-34z" fill="#A100FF"/>
+  <text x="20" y="56" fill="#101828" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" letter-spacing="-1.5">accenture</text>
+</svg>

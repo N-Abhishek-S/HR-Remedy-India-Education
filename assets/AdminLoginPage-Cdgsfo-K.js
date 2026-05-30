@@ -1,0 +1,1 @@
+import{dt as e}from"./react-C2OywQUB.js";import t from"./AuthPage-Cj4zWsmU.js";var n=e();function r(){return(0,n.jsx)(t,{mode:`login`})}export{r as default};

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title id="title">Capgemini</title>
+  <rect width="260" height="80" fill="none"/>
+  <text x="7" y="53" fill="#0070AD" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-style="italic">Capgemini</text>
+  <path d="M207 32c20-21 42-13 37 5-4 15-27 18-44 13 12 14 31 12 43 2" fill="none" stroke="#0070AD" stroke-width="5" stroke-linecap="round"/>
+</svg>

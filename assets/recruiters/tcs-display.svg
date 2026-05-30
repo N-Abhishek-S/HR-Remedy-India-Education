@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title">
+  <title id="title">TCS Tata Consultancy Services</title>
+  <rect width="260" height="80" fill="none"/>
+  <text x="6" y="52" fill="#1b3f91" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-3">tcs</text>
+  <text x="111" y="31" fill="#38508a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">TATA</text>
+  <text x="111" y="45" fill="#38508a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">CONSULTANCY</text>
+  <text x="111" y="59" fill="#38508a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">SERVICES</text>
+</svg>
