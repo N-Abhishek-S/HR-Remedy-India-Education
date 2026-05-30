@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --no-history --dotfiles",
     "start": "vite preview --host 0.0.0.0",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -1,12 +1,22 @@
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
+
+/** Stamps the current UTC build time into the HTML for cache-debugging. */
+function buildTimestamp(): Plugin {
+  return {
+    name: "build-timestamp",
+    transformIndexHtml(html) {
+      return html.replace("__BUILD_TIMESTAMP__", new Date().toISOString());
+    },
+  };
+}
 
 export default defineConfig({
   base: "/HR-Remedy-India-Education/",
 
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), buildTimestamp()],
 
   resolve: {
     alias: {
